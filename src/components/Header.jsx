@@ -1,23 +1,24 @@
 const Header = () => {
   return (
-    <div
-      className="navbar text-EggShell  bg-PrussianBlue shadow-sm"
-      data-aos="fade"
-    >
+    <div className="navbar  bg-EggShell py-3 font-poppins text-PrussianBlue shadow-sm">
       <div className="navbar-start">
-        <a className="btn btn-ghost text-xl">Tarnished</a>
+        <a href="#" className="btn btn-ghost border-none text-lg">
+          Tarnished
+        </a>
       </div>
-      <div className="navbar-center  space-x-3">
-        <a className="link-hover text-xl">Projects</a>
-        <a href="#" className="link-hover text-xl">
+      <div className="navbar-center font-medium  space-x-3">
+        <a href="" className="btn btn-ghost border-none text-lg">
+          Projects
+        </a>
+        <a href="#" className="btn btn-ghost border-none text-lg">
           Works
         </a>
-        <a href="#" className="link-hover text-xl">
+        <a href="#" className="btn btn-ghost border-none text-lg">
           Skills
         </a>
       </div>
       <div className="navbar-end">
-        <a className="btn btn-ghost text-xl">Contact Me </a>
+        <a className="btn btn-ghost border-none text-lg">Contact Me </a>
       </div>
     </div>
   );
