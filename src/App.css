@@ -1,1 +1,12 @@
 @import "tailwindcss";
+@plugin "daisyui";
+@theme {
+  --font-poppins: "poppins";
+  --font-satoshi: "satoshi";
+  --color-PrussianBlue: #1d2d44;
+  --color-RichBlack: #0d1321;
+  --color-PayneGray: #3e5c76;
+  --color-SilverLakeBlue: #748cab;
+  --color-EggShell: #f0ebd8;
+  --font-satoshi: "Satoshi", sans-serif;
+}
