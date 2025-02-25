@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Header />
-      <main className="min-h-screen ">
+      <main className="">
         <Hero />
         <TechStack />
         <AboutMe />
