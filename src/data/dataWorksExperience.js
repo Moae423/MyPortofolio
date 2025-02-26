@@ -6,22 +6,22 @@ export const Works = [
   {
     id: 1,
     image: Works1,
-    workTitle: "Network Engineering",
+    workTitle: "Network Team Lead",
     detailWork:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis libero similique nihil, quod deserunt rem officiis explicabo minus? Ipsa, beatae.",
+      "mengimplementasikan, mengelola infrastruktur jaringan sekolah di SDN 03 Parak Kurai. mengkoordinasikan tim untuk memastikan kinerja jaringan yang optimal dan aman, mengelola akses jaringan. Dan juga memantau kinerja jaringan",
   },
   {
     id: 2,
     image: Works2,
-    workTitle: "Network Administrator",
+    workTitle: "Network Administrator ",
     detailWork:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis libero similique nihil, quod deserunt rem officiis explicabo minus? Ipsa, beatae.",
+      "Teknik Jaringan di SDN 14 ATTS, Penyiapan dan Pengelolaan Prasarana Jaringan Sekolah. Hal ini termasuk memasang jaringan sebagai persiapan ujian akhir dan menyiapkan sistem jaringan luar ruangan untuk memastikan konektivitas yang bagus.",
   },
   {
     id: 3,
     image: Works3,
     workTitle: "Intern Network Engineer",
     detailWork:
-      "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis libero similique nihil, quod deserunt rem officiis explicabo minus? Ipsa, beatae.",
+      "Intern Network Engineer di Telkom STO Payakumbuh, menyiapkan Optical Network Terminal (ONT) dengan menggunakan fiber optik, Switch/Hub, memperbaiki jaringan fiber optik dengan mengatur voltase kabel dan perangkat access point.",
   },
 ];
