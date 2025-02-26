@@ -1,7 +1,7 @@
 import { project } from "../data/dataProjects";
-export const AboutMe = () => {
+const ProjectsPage = () => {
   return (
-    <div className="bg-EggShell min-h-screen">
+    <div className="bg-EggShell" id="projects">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#1d2d44"
@@ -10,7 +10,7 @@ export const AboutMe = () => {
         ></path>
       </svg>
       <div className="p-8 text-center">
-        <h1 className="text-4xl text-PrussianBlue font-poppins font-bold ">
+        <h1 className="text-2xl md:text-5xl text-PrussianBlue font-poppins font-bold ">
           My Project Builds It
         </h1>
       </div>
@@ -22,27 +22,31 @@ export const AboutMe = () => {
           }`}
           data-aos={items.position === "right" ? "fade-left" : "fade-right"}
         >
-          <div className="max-w-md">
-            <h2 className="text-RichBlack text-3xl font-poppins font-semibold ">
+          <div className="w-xl p-4">
+            <h2 className="text-RichBlack text-lg md:text-3xl font-poppins font-semibold ">
               {items.title}
             </h2>
-            <p className="text-RichBlack font-satoshi py-3">
+            <p className="text-RichBlack font-satoshi text-md md:text-lg py-3">
               {items.description}
             </p>
             <a
               href={items.detail}
               target="_blank"
-              className="btn btn-outline border-2 border-PrussianBlue text-PrussianBlue hover:bg-SilverLakeBlue hover:text-EggShell hover:border-none hover:scale-105 transition-all duration-200"
+              className="btn btn-outline  cursor-pointer border-2 border-PrussianBlue text-PrussianBlue hover:bg-SilverLakeBlue hover:text-EggShell hover:border-none hover:scale-105 transition-all duration-200"
             >
               See More
             </a>
           </div>
-          <img
-            src={items.image}
-            width={600}
-            className="rounded-2xl shadow-xl"
-            alt=""
-          />
+          <div className="p-3">
+            <img
+              src={items.image}
+              className="sm:w-lg md:w-2xl  rounded-2xl  hover:scale-105 transition duration-200 shadow-2xl md:block "
+              alt=""
+            />
+            <p className="text-sm text-RichBlack font-satoshi font-medium py-3 text-center">
+              Preview {items.title}
+            </p>
+          </div>
         </div>
       ))}
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -55,3 +59,4 @@ export const AboutMe = () => {
     </div>
   );
 };
+export default ProjectsPage;

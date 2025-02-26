@@ -5,8 +5,9 @@ import Header from "./components/Header.jsx";
 import Hero from "./components/Hero.jsx";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { AboutMe } from "./components/AboutMe.jsx";
+import ProjectsPage from "./components/Projects.jsx";
 import TechStack from "./components/TechStack.jsx";
+import WorksPage from "./components/Works.jsx";
 function App() {
   useEffect(() => {
     AOS.init({ duration: 1000 }); // Atur durasi animasi (dalam ms)
@@ -14,10 +15,11 @@ function App() {
   return (
     <>
       <Header />
-      <main className="">
+      <main className="min-h-screen">
         <Hero />
         <TechStack />
-        <AboutMe />
+        <ProjectsPage />
+        <WorksPage />
       </main>
       <Footer />
     </>
