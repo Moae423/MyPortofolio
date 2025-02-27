@@ -2,7 +2,7 @@ import { data } from "../data/DataTechStack.js";
 
 const TechStack = () => {
   return (
-    <div className="bg-PrussianBlue">
+    <div className="bg-PrussianBlue" id="techstack">
       <div className="py-12 px-8 flex justify-center items-center flex-col  ">
         {/* Title */}
         <h1 className="py-3 text-3xl md:text-4xl  font-poppins font-bold text-center">

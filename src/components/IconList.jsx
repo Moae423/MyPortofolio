@@ -1,6 +1,6 @@
-import Instagram from "../assets/icon/Instamgram.svg";
-import Github from "../assets/icon/Githhub.svg";
-import LinkedIn from "../assets/icon/LinkedIn.svg";
+import Instagram from "../assets/icon/instagram.svg";
+import Github from "../assets/icon/github.svg";
+import LinkedIn from "../assets/social-linkedin.svg";
 
 export const IconList = (props) => {
   return (

@@ -16,11 +16,15 @@ const ProjectsPage = () => {
       </div>
       {project.map((items) => (
         <div
+          // data-aos={items.position === "right" ? "fade-left" : "fade-right"}
+          data-aos="fade-up"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="3000"
+          data-aos-duration="800"
           key={items.id}
           className={`flex flex-wrap gap-4 justify-center items-center py-6 ${
             items.position === "right" ? "md:flex-row" : "md:flex-row-reverse"
           }`}
-          data-aos={items.position === "right" ? "fade-left" : "fade-right"}
         >
           <div className="w-xl p-4">
             <h2 className="text-RichBlack text-lg md:text-3xl font-poppins font-semibold ">

@@ -44,10 +44,10 @@ const Header = () => {
         <a href="#projects" className="btn btn-ghost border-none text-lg">
           Projects
         </a>
-        <a href="#" className="btn btn-ghost border-none text-lg">
+        <a href="#works" className="btn btn-ghost border-none text-lg">
           Works
         </a>
-        <a href="#" className="btn btn-ghost border-none text-lg">
+        <a href="#techstack" className="btn btn-ghost border-none text-lg">
           Skills
         </a>
       </div>

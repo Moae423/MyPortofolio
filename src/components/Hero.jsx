@@ -1,8 +1,13 @@
+import { useEffect } from "react";
 import Codes from "../assets/Foto Daffa Rihadatul Fairus.jpg";
 import { Button } from "./Button";
 import { IconList } from "./IconList";
+import Aos from "aos";
 
 const Hero = () => {
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  });
   return (
     <div className="bg-[#F0EBD8] w-full overflow-x-hidden" id="home">
       <div className="flex justify-center items-center pt-3 ">
@@ -30,26 +35,34 @@ const Hero = () => {
                 I&apos;m Daffa Rihadatul Fairus
               </h1>
               <p className="text-md md:text-xl max-w-sm md:max-w-lg text-[#0D1321] font-satoshi w-lg">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                Nesciunt porro distinctio quod natus cum laudantium reiciendis
-                debitis dignissimos quasi fuga.
+                I&apos;m a web developer ethusiast and network engineering .
               </p>
             </div>
 
             {/* Tombol */}
             <div className="flex gap-4">
-              <Button
-                type="button"
-                className="btn bg-PrussianBlue cursor-pointer hover:scale-105 transition-all duration-200"
+              <a
+                href="https://www.linkedin.com/in/daffa-rihadatul-fairus/"
+                target="_blank"
               >
-                Hire Me
-              </Button>
-              <Button
-                type="button"
-                className="btn btn-outline border-2 hover:bg-SilverLakeBlue border-SilverLakeBlue text-RichBlack hover:text-EggShell cursor-pointer hover:scale-105 transition-all duration-200"
+                <Button
+                  type="button"
+                  className="btn bg-PrussianBlue cursor-pointer hover:scale-105 transition-all duration-200"
+                >
+                  Hire Me
+                </Button>
+              </a>
+              <a
+                href="../assets/CV Daffa Rihadatul Fairus.pdf"
+                download="CV Daffa Rihadatul Fairus.pdf"
               >
-                Download My Cv
-              </Button>
+                <Button
+                  type="button"
+                  className="btn btn-outline border-2 hover:bg-SilverLakeBlue border-SilverLakeBlue text-RichBlack hover:text-EggShell cursor-pointer hover:scale-105 transition-all duration-200"
+                >
+                  Download My Cv
+                </Button>
+              </a>
             </div>
 
             <IconList className="hover:scale-110 transition-all duration-200" />
